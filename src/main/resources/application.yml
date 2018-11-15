@@ -4,6 +4,8 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/wedding
     driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
     tomcat:
       maxActive: 10
       maxIdle: 5
