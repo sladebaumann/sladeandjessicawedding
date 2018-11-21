@@ -5,10 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HelloWorld {
+public class SladeAndJessicaWeddingController {
 
     @GetMapping("/about")
     public String about(Model model) {
         return "about";
     }
+
 }

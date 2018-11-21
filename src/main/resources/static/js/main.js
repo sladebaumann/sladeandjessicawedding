@@ -69,12 +69,12 @@
 			var $this = $(this);
 
 
-			if ( $('body').hasClass('overflow offcanvas') ) {
-				$('body').removeClass('overflow offcanvas');
-			} else {
-				$('body').addClass('overflow offcanvas');
-			}
-			$this.toggleClass('active');
+            if ( $('body').hasClass('overflow offcanvas') ) {
+                $('body').removeClass('overflow offcanvas');
+            } else {
+                $('body').addClass('overflow offcanvas');
+            }
+            $this.toggleClass('active');
 			event.preventDefault();
 
 		});
@@ -108,11 +108,11 @@
 							}
 
 							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
+						},  k * 1, 'easeInOutExpo' );
 					});
 					
-				}, 100);
-				
+				}, 1000);
+
 			}
 
 		} , { offset: '85%' } );
@@ -164,7 +164,7 @@
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
+			}, 2000, 'easeInOutExpo');
 			
 			return false;
 		});
@@ -180,6 +180,20 @@
 
 		});
 	
+	};
+
+	var smoothGoToId = function() {
+
+        // Slow scroll to id
+        $('.smooth-goto').on('click', function(event) {
+        	$('body').removeClass('overflow offcanvas');
+        	$('.js-fh5co-nav-toggle').removeClass('active');
+
+        	event.preventDefault();
+            $('html, body').animate({
+				scrollTop: $(this.hash).offset().top}, 2000, 'easeInOutExpo');
+            return false;
+        });
 	};
 
 
@@ -226,6 +240,7 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+        smoothGoToId();
 	});
 
 
