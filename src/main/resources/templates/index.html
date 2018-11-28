@@ -84,13 +84,13 @@
 						<li class="has-dropdown">
 							<a href="#fh5co-event" class="smooth-goto">Events</a>
 							<ul class="dropdown">
-								<li><a href="#sunken-garden">The Sunken Garden</a></li>
-								<li><a href="#oak-room">The Oak Room</a></li>
+								<li><a href="#sunken-garden" class="smooth-goto">The Sunken Garden</a></li>
+								<li><a href="#oak-room" class="smooth-goto">The Oak Room</a></li>
 							</ul></li>
 						<li><a href="#fh5co-couple-story" class="smooth-goto">Story</a></li>
-						<li><a href="/gallery">Gallery</a></li>
+						<li><a href="#fh5co-gallery" class="smooth-goto">Gallery</a></li>
 						<li><a href="#fh5co-started" class="smooth-goto">RSVP</a></li>
-						<li><a href="/contact">Contact</a></li>
+						<!--<li><a href="/contact">Contact</a></li>-->
 					</ul>
 				</div>
 			</div>
@@ -163,8 +163,7 @@
                             <div class="col-md-6 col-sm-6 text-center">
                                 <div class="event-wrap animate-box" id="sunken-garden">
                                     <h3>Ceremony</h3>
-									<b>FIX ME: GOOGLE MAPS NOT WORKING</b>
-                                    <p>The Sunken Garden at Como Observatory</p>
+                                    <p class="event-subtitle">The Sunken Garden at Como Observatory</p>
                                     <div class="event-col">
                                         <i class="icon-clock"></i>
                                         <span>5:00 PM</span>
@@ -181,8 +180,7 @@
                             <div class="col-md-6 col-sm-6 text-center" id="oak-room">
                                 <div class="event-wrap animate-box">
                                     <h3>Reception</h3>
-									<b>FIX ME: GOOGLE MAPS NOT WORKING</b>
-                                    <p>The Oak Room at Sweeney's Saloon</p>
+                                    <p class="event-subtitle">The Oak Room at Sweeney's Saloon</p>
                                     <div class="event-col">
                                         <i class="icon-clock"></i>
                                         <span>6:00 PM</span>
@@ -423,7 +421,9 @@
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
-
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPaGP7sIA6Divma2P9Sy6rUHJs46jWvhY&sensor=false"></script>
+	<script src="js/google_map.js"></script>
 	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
@@ -438,19 +438,7 @@
         month: d.getMonth() + 1,
         day: d.getDate()
     });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
     </script>
-    <!-- Google Maps API -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPaGP7sIA6Divma2P9Sy6rUHJs46jWvhY">
-    </script>
-
 	</body>
 </html>
 
