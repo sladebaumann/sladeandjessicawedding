@@ -895,7 +895,7 @@ form {
 		.btn {
 			padding: 15px 20px;
 			background: $brand-white!important;
-			color: $brand-primary;
+			color: gray;
 			border: none!important;
 			font-size: 14px;
 			text-transform: uppercase;
@@ -960,7 +960,7 @@ form {
     display: inline-block;
     width: 100px;
     height: 100px;
-    background: rgba($brand-primary,.8);
+    background: gray;
     margin: 0 4px;
     @include border-radius(50%);
     position: relative;
