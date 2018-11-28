@@ -1808,3 +1808,22 @@ form {
 		opacity: 0;
 	}
 }
+
+/* slade custom css */
+@media screen and (max-width: 768px) {
+	.col-xs-4 {
+		width: 83.33333% !important;
+	}
+	.col-xs-8 {
+		width: 16.66667% !important;
+	}
+}
+
+#map-sunken-garden, #map-oak-room {
+	height: 200px;
+	width: 100%;
+}
+
+.event-subtitle {
+	font-size: 12px;
+}
