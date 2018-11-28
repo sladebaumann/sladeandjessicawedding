@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0, 0, 0, .5);
+		background: rgba(0, 0, 0, .2);
 		@include transition(.5s);
 	}
 	&:hover {
@@ -1826,4 +1826,10 @@ form {
 
 .event-subtitle {
 	font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		background-position: center !important;
+	}
 }
