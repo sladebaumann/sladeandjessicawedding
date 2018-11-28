@@ -111,7 +111,7 @@
 						},  k * 1, 'easeInOutExpo' );
 					});
 					
-				}, 1000);
+				}, 500);
 
 			}
 
@@ -186,6 +186,7 @@
 
         // Slow scroll to id
         $('.smooth-goto').on('click', function(event) {
+        	// verifies it works even in mobile mode
         	$('body').removeClass('overflow offcanvas');
         	$('.js-fh5co-nav-toggle').removeClass('active');
 
@@ -195,7 +196,6 @@
             return false;
         });
 	};
-
 
 	// Loading page
 	var loaderPage = function() {

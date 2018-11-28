@@ -12,4 +12,6 @@ public class SladeAndJessicaWeddingController {
         return "about";
     }
 
+    @GetMapping("/events")
+    public String events(Model model) { return "events"; }
 }
