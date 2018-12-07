@@ -132,7 +132,7 @@ body {
 			bottom: 0;
 			left: 0;
 			z-index: 101;
-			background: rgba(0,0,0,.7);
+			background: rgba(0,0,0,0.7);
 			content: "";
 		}
 	}
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			list-style: none;
 			display: inline;
 			a {
-				font-size: 14px;
+				font-size: 18px;
 				padding: 30px 10px;
 				text-transform: uppercase;
 				color: rgba(255,255,255,.5);
@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 	.event-wrap{
 		border: 2px solid rgba($brand-white,.5);
-		background:rgba($brand-white,.1);
+		background:rgba(100, 100, 100,.7);
 		padding: 30px;
 		width: 100%;
 		float: left;
@@ -988,7 +988,6 @@ form {
 
 .simply-countdown > .simply-section .simply-amount {
 	font-size: 50px;
-	font-family: "Sacramento", Arial, serif;
 	/* amounts */
 }
 
@@ -1323,7 +1322,7 @@ form {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0, 0, 0, .4);
+		background: rgba(0, 0, 0, 0.4);
 	}
 	.fh5co-heading {
 		h2 {

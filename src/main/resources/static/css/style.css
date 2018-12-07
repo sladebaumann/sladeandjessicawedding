@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline;
 }
 .fh5co-nav ul li a {
-  font-size: 14px;
+  font-size: 18px;
   padding: 30px 10px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(100, 100, 100, 0.7);
   padding: 30px;
   width: 100%;
   float: left;
@@ -975,7 +975,7 @@ form label {
 
 .simply-countdown > .simply-section .simply-amount {
   font-size: 50px;
-  font-family: "Sacramento", Arial, serif;
+
   /* amounts */
 }
 
