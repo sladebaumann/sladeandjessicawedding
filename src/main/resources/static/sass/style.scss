@@ -857,6 +857,7 @@ h1, h2, h3, h4, h5, h6, figure {
 form {
 	label {
 		font-weight: normal!important;
+		color: #fff;
 	}
 }
 
@@ -1835,13 +1836,17 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-	header {
+	header, #fh5co-started, #fh5co-event {
 		background-position: center !important;
 	}
 }
 
 @media screen and (max-width: 1200px) {
-	header {
+	header, #fh5co-started, #fh5co-event {
 		background-position: center !important;
 	}
+}
+
+.rsvp-form-label {
+	color: #F14E95;
 }

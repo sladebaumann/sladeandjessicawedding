@@ -4,8 +4,8 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var latLngSunkenGarden = {lat: 44.944260, lng: -93.126082};
-    var latLngOakRoom = {lat: 44.981804, lng: -93.150834};
+    var latLngSunkenGarden = {lat: 44.981804, lng: -93.150834};
+    var latLngOakRoom = {lat: 44.944260, lng: -93.126082};
 
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
@@ -17,8 +17,8 @@ function init() {
     var mapOakRoom = new google.maps.Map(mapElementOakRoom, {zoom: 11, center: latLngOakRoom});
 
     // Create markers
-    var markerSunkenGarden = new google.maps.Marker({position: latLngSunkenGarden, map: mapSunkenGarden, url: 'https://maps.google.com/maps/?q=44.944260,-93.126082'});
-    var markerOakRoom = new google.maps.Marker({position: latLngOakRoom, map: mapOakRoom, url: 'https://maps.google.com/maps/?q=44.981804,-93.150834'});
+    var markerSunkenGarden = new google.maps.Marker({position: latLngSunkenGarden, map: mapSunkenGarden, url: 'https://maps.google.com/maps/?q=44.981804,-93.150834'});
+    var markerOakRoom = new google.maps.Marker({position: latLngOakRoom, map: mapOakRoom, url: 'https://maps.google.com/maps/?q=44.944260,-93.126082'});
 
     markerSunkenGarden.addListener('click', function() {
         if (this.url) {

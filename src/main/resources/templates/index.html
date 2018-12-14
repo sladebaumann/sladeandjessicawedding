@@ -357,26 +357,53 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+					<p>Please fill out the form to let us know if you are able to attend!</p>
 				</div>
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
 					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+								<label for="first_name">First Name*</label>
+								<input type="text" class="form-control" id="first_name" placeholder="First Name">
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
+								<label for="last_name">Last Name*</label>
+								<input type="text" class="form-control" id="last_name" placeholder="Last Name">
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<div class="form-group">
+								<label for="email">Email</label>
 								<input type="email" class="form-control" id="email" placeholder="Email">
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+						<div class="col-md-12 col-sm-12">
+							<div class="form-group">
+								<label for="phone">Phone Number</label>
+								<input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<div class="form-group">
+								<label for="notes">Notes</label>
+								<input type="text" class="form-control" id="notes" placeholder="Special Dietary Requests, etc.">
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<div class="form-group">
+								<label for="is_going">Will you be joining us?*</label>
+								<select id="is_going" class="form-control">
+									<option value="yes">Yes, I will be attending!</option>
+									<option value="no">No, I won't be attending.</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<button type="submit" class="btn btn-default btn-block">Submit RSVP</button>
 						</div>
 					</form>
 				</div>
